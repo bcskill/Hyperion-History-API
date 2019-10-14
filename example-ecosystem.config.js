@@ -8,8 +8,8 @@ module.exports = {
             kill_timeout: 3600,
             env: {
                 AMQP_HOST: '127.0.0.1:5672',
-                AMQP_USER: 'input',
-                AMQP_PASS: '',
+                AMQP_USER: 'my_user',
+                AMQP_PASS: 'my_password',
                 REDIS_HOST: '127.0.0.1',
                 REDIS_PORT: '6379',
                 ES_HOST: '127.0.0.1:9200',
@@ -59,8 +59,10 @@ module.exports = {
             watch: ["api"],
             env: {
                 AMQP_HOST: "localhost:5672",
-                AMQP_USER: "myUser",
-                AMQP_PASS: "myPass",
+                AMQP_USER: "my_user",
+                AMQP_PASS: "my_password",
+                REDIS_HOST: '127.0.0.1',
+                REDIS_PORT: '6379',
                 SERVER_PORT: '7000',
                 SERVER_NAME: 'example.com',
                 SERVER_ADDR: '127.0.0.1',
